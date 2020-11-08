@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reasignaciones</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="icon" type="image/png" href="../img/logo2.png">
+</head>
+<body>
+
+<!-- Login -->
+<!-- End Login -->
+
+<!--- Header --->
+	<header class="header">
+		<div id="toggle-menu" class="toggle-menu"></div>
+		<div><a href="#"><img id="logo" src="../img/logo2.png"></a></div>
+		<div class="tools">
+			<div class="tools-icon">
+				<i id="tools" class="fa fa-tools"></i>
+			</div>
+			<div id="cat-sige">
+				<button>Cat Sigecof</button>
+			</div>
+			<div id="autoridades">
+				<button>Autoridades</button>
+			</div>
+			<div id="buscar">
+				<button>Buscar</button>
+			</div>
+		</div>
+	</header>
+<!--- End Header --->
+
+
+
+<!---- Main Aside ---->
+	<aside>
+		<div class="menu" id="menu">				
+			<div class="cont-logo">
+				<a href="#">
+					<img class="logo" src="../img/logo2.png">
+				</a>
+			</div>
+			<div class="data">
+				<a href="#"><img src="../img/user2.png"></a>
+				<div class="main-name">
+					<h3>Hector Cortez</h3>
+					<a href="#" class="dataset">Editar</a>
+				</div>
+			</div>
+			<div class="menu-center">
+				<nav>	
+					<ul>
+						<li class="item" id="inicio">
+							<a href="inicio.html">
+								<i id="init" class="fa fa-home i-init"></i>
+								<span  class="hidde">Inicio</span>
+							</a>
+						</li>
+						<li class="item">
+							<a href="aside.html">
+								<i class="fa fa-building i-init"></i>
+								<span class="hidde">Dependencias</span>
+							</a>
+						</li>
+						<li class="item">
+							<a href="ficha.html">
+								<i class="fa fa-clipboard-check i-init"></i>
+								<span class="hidde">Ficha Técnica</span>
+							</a>
+						</li>
+						<li class="item">
+							<a href="reasignaciones.html">
+								<i class="fa fa-id-badge i-init"></i>
+								<span class="hidde">Reasignaciones</span>
+							</a>
+						</li>
+						<li class="item">
+							<a href="ayuda.html">
+								<i class="fa fa-info-circle i-init"></i>
+								<span class="hidde">Ayuda</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="btn-salir">
+				<a href="../../index.html">
+					<i class="fa fa-sign-out-alt"></i>
+					<span class="hidde">Salir</span>	
+				</a>
+			</div>
+		</div>
+	</aside>
+<!---- End Aside ---->
+
+
+
+
+<!----- Inicio Right aside ----->
+	<aside class="right-aside" id="right-aside"> 
+		<div class="data">
+			<img src="../img/user2.png">
+			<div class="text-header">
+				<div>
+					<h3>Hola, Hector</h3>
+					<a href="#"><h5 id="admin">Administrador</h5></a>
+				</div>
+			</div>
+		</div>
+		<div class="mod">
+			<button class="switch" id="switch">
+				<span><i class="fa fa-sun"></i></span>
+				<span><i class="fa fa-moon"></i></span>
+			</button>
+			<h4 id="message">Modo Oscuro</h4>
+		</div>
+		<div class="calendary" id="box3">
+			<h4 class="note">Calendario</h4>
+			<div class="calendario"></div>
+		</div>
+		<div class="report" id="box4">
+		
+		</div>
+	</aside>
+<!----- Ficha End Right ----->
+
+
+
+
+<!------ Inicio ------>
+	<main>
+		<h1>Reasignaciones</h1>
+		<section>
+			<div class="navigation">
+				<div class="links">
+					<button class="inicio">Comprobante de Reasignación</button>
+				</div>
+				<div class="more">
+					<i id="plus" class="fa fa-plus"></i>
+					<i id="minus" class="fa fa-minus"></i>
+				</div>
+			</div>
+			<div id="ocultar">
+				<article>
+					<form action="" method="" id="comprob-reasig">
+						<div class="center">
+							<div class="id-carga">
+								<label for="id-carga">ID - Carga</label><br>
+								<input type="text" name="id-carga" id="id-carga">
+							</div>
+							<div class="fecha-carga">
+								<label for="fecha-carga">Fecha - Carga</label><br>
+								<input type="date" name="fecha-carga" id="fecha-carga">
+							</div>
+						</div>
+						<div class="center">
+							<div class="id-dependencia">
+								<label for="id-dependencia">ID - Dependencia</label><br>
+								<input type="text" name="id-dependencia" id="id-dependencia">
+							</div>
+							<div class="id-movimiento">
+								<label for="id-movimiento">ID - Movimiento</label><br>
+								<input type="text" name="id-movimiento" id="id-movimiento">
+							</div>
+						</div>
+					</form>
+
+					<table>
+						<tr>
+							<th>Id Carga</th>
+							<th>Fecha Carga</th>
+							<th>Cat Sigecof</th>
+							<th>Cant</th>
+							<th>Código</th>
+							<th>Nombre</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</article>
+			</div>
+		</section>
+
+
+
+
+		<section>
+			<div class="navigation">
+				<div class="links">
+					<button class="inicio">Comprobante de Descarga</button>				
+				</div>
+				<div class="more">
+					<i id="plus2" class="fa fa-plus"></i>
+					<i id="minus2" class="fa fa-minus"></i>
+				</div>
+			</div>
+			<div id="ocultar2">	
+				<article>
+					<form action="" method="" id="comprob-descarg">
+						<div class="center">
+							<div class="id-descarga">
+								<label for="id-descarga">ID - Descarga</label><br>
+								<input type="text" name="id-descarga" id="id-descarga">
+							</div>
+							<div class="id-movih">
+								<label for="id-movih">ID - Movih</label><br>
+								<input type="text" name="id-movih" id="id-movih">
+							</div>
+						</div>
+						<div class="center">
+							<div class="fecha-descrip">
+								<label for="fecha-descrip">Fecha - Descripción</label><br>
+								<input type="text" name="fecha-descrip" id="fecha-descrip">
+							</div>
+							<div class="id-dependh">
+								<label for="id-dependh">ID - Dependh</label><br>
+								<input type="text" name="id-dependh" id="id-dependh">
+							</div>
+						</div>
+					</form>
+
+					<table>
+						<tr>
+							<th>Id Descarga</th>
+							<th>Fecha Descr</th>
+							<th>Cat Sigecof</th>
+							<th>Cant</th>
+							<th>Código</th>
+							<th>Nombre</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</article>
+			</div>
+		</section>
+
+		
+
+
+	</main>
+<!------ End Ficha ------>
+
+
+
+<footer>
+	<h6>© Desarrollado por Héctor Cortez.</h6>
+</footer>
+
+
+
+
+<!-- Plugin used -->
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/hammer.min.js"></script>
+<script src="../js/main.js"></script>
+<!--End -->
+
+</body>
+</html>

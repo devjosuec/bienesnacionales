@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dependencias</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="icon" type="image/png" href="../img/logo2.png">
+</head>
+<body>
+
+<!-- Login -->
+<!-- End Login -->
+
+
+
+<!--- Header --->
+	<header class="header">
+		<div id="toggle-menu" class="toggle-menu"></div>
+		<div><a href="#"><img id="logo" src="../img/logo2.png"></a></div>
+		<div class="tools">
+			<div class="tools-icon">
+				<i id="tools" class="fa fa-tools"></i>
+			</div>
+			<div id="cat-sige">
+				<button>Cat Sigecof</button>
+			</div>
+			<div id="autoridades">
+				<button>Autoridades</button>
+			</div>
+			<div id="buscar">
+				<button>Buscar</button>
+			</div>
+		</div>
+	</header>
+<!--- End Header --->
+
+
+
+
+<!---- Main Aside ---->
+	<aside>
+		<div class="menu" id="menu">				
+			<div class="cont-logo">
+				<a href="#">
+					<img class="logo" src="../img/logo2.png">
+				</a>
+			</div>
+			<div class="data">
+				<a href="#"><img src="../img/user2.png"></a>
+				<div class="main-name">
+					<h3>Hector Cortez</h3>
+					<a href="#" class="dataset">Editar</a>
+				</div>
+			</div>
+			<div class="menu-center">
+				<nav>	
+					<ul>
+						<li class="item" id="inicio">
+							<a href="inicio.html">
+								<i id="init" class="fa fa-home i-init"></i>
+								<span  class="hidde">Inicio</span>
+							</a>
+						</li>
+						<li class="item">
+							<a href="aside.html">
+								<i class="fa fa-building i-init"></i>
+								<span class="hidde">Dependencias</span>
+							</a>
+						</li>
+						<li class="item">
+							<a href="ficha.html">
+								<i class="fa fa-clipboard-check i-init"></i>
+								<span class="hidde">Ficha Técnica</span>
+							</a>
+						</li>
+						<li class="item">
+							<a href="reasignaciones.html">
+								<i class="fa fa-id-badge i-init"></i>
+								<span class="hidde">Reasignaciones</span>
+							</a>
+						</li>
+						<li class="item">
+							<a href="ayuda.html">
+								<i class="fa fa-info-circle i-init"></i>
+								<span class="hidde">Ayuda</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="btn-salir">
+				<a href="../../index.html">
+					<i class="fa fa-sign-out-alt"></i>
+					<span class="hidde">Salir</span>	
+				</a>
+			</div>
+		</div>
+	</aside>
+<!---- End Aside ---->
+
+
+
+
+<!----- Right aside ----->
+	<aside class="right-aside" id="right-aside"> 
+		<div class="data">
+			<img src="../img/user2.png">
+			<div class="text-header">
+				<div>
+					<h3>Hola, Hector</h3>
+					<a href="#"><h5 id="admin">Administrador</h5></a>
+				</div>
+			</div>
+		</div>
+		<div class="mod">
+			<button class="switch" id="switch">
+				<span><i class="fa fa-sun"></i></span>
+				<span><i class="fa fa-moon"></i></span>
+			</button>
+			<h4 id="message">Modo Oscuro</h4>
+		</div>
+		<div class="calendary" id="box3">
+			<h4 class="note">Calendario</h4>
+			<div class="calendario"></div>
+		</div>
+		<div class="report" id="box4">
+			<h4 class="note">Reportes</h4>
+			<div class="reportes">
+				<a href="#">Portada para Inventario</a>
+				<a href="#">Portada para Sobre</a>
+				<a href="#">Listado de Firmas</a>
+				<a href="#">Listado de Áreas</a>
+			</div>
+		</div>
+	</aside>
+<!----- End Right ----->
+
+
+
+
+<!------ Dependencias ------>
+	<main>
+		<h1>Dependencias</h1>
+		<section id="box1">
+			<article>	
+				<form action="" method="" id="" class="dependence">
+					<div class="center">
+						<div class="codigo">
+							<label for="codigo">Código</label><br>
+							<input type="text" name="codigo" id="codigo">
+						</div>	
+						<div class="clasificacion">
+							<label for="clasificacion">Clasificación</label><br>
+							<select name="clasificacion" id="clasificacion">
+								<option></option>
+								<option value="">Unidad Administrativa - Académica</option>
+								<option value="">Unidad Administrativa - Académica</option>
+								<option value="">Unidad Administrativa - Académica</option>
+							</select>
+						</div>
+					</div>
+		  			<label for="dependencia">Dependencia</label><br>
+					<input type="text" name="dependencia" id="dependencia">
+					<label for="encargado">Encargado</label><br>
+					<input type="text" name="encargado" id="encargado">
+					<div class="center">
+						<div class="cedula">
+							<label for="cedula">Cédula</label><br>
+							<input type="text" name="cedula" id="cedula">
+						</div>
+						<div class="cargo">
+							<label for="cargo">Cargo</label><br>
+							<input type="text" name="cargo" id="cargo">
+						</div>
+					</div>
+					<label for="observacion">Observación</label><br>
+					<textarea name="observacion" id="observacion"></textarea>
+					<div class="center">
+						<div class="tomafisica">
+							<label for="tomafisica">Toma Física</label><br>
+							<input type="text" name="tomafisica" id="tomafisica">
+						</div>
+						<div class="edicion">
+							<label for="edicion">Edición y Transcripción</label><br>
+							<input type="text" name="edicion" id="edicion">
+						</div>
+					</div>
+					<div class="center">
+						<div class="documentacion">
+							<label for="documentacion">Documentación</label><br>
+							<input type="text" name="documentacion" id="documentacion">
+						</div>
+						<div class="chequeo">
+							<label for="chequeo">Último Chequeo</label><br>
+							<input type="date" name="chequeo" id="chequeo">
+						</div>
+					</div>
+					<div class="btn-center">
+						<input type="submit" class="btn" value="Guardar" name="guardar" id="guardar">
+						<input type="reset" class="btn" value="Borrar" name="borrar" id="borrar">
+					</div>
+				</form>
+			</article>
+		</section>
+
+		<h2>Listado de dependencias</h2>
+		
+		<section id="box2" style="height: 300px;">
+		</section>
+	</main>
+<!------ End Dependencias ------>
+
+
+<footer>
+	<h6>© Desarrollado por Héctor Cortez.</h6>
+</footer>
+
+
+
+
+<!-- Plugin used -->
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/hammer.min.js"></script>
+<script src="../js/main.js"></script>
+<!--End -->
+
+</body>
+</html>
