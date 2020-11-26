@@ -15,19 +15,12 @@
 <!--- Header --->
 	<header class="header">
 		<div id="toggle-menu" class="toggle-menu"></div>
-		<div><a href="#"><img id="logo" src="../img/logo2.png"></a></div>
+		<div><a href="inicio.html"><img id="logo" src="../img/logo2.png"></a></div>
 		<div class="tools">
-			<div class="tools-icon">
-				<i id="tools" class="fa fa-tools"></i>
-			</div>
-			<div id="cat-sige">
-				<button>Cat Sigecof</button>
-			</div>
-			<div id="autoridades">
-				<button>Autoridades</button>
-			</div>
-			<div id="buscar">
-				<button>Buscar</button>
+			<a id="showCategoriyForm" class="categories" href="#"><i class="fa fa-tags" title="Categoría Sigecof"></i></a>
+			<div class="search">
+				<input type="text" placeholder="Buscar">
+				<i class="fa fa-search" title="Buscar"></i>
 			</div>
 		</div>
 	</header>
@@ -39,7 +32,7 @@
 	<aside>
 		<div class="menu" id="menu">				
 			<div class="cont-logo">
-				<a href="#">
+				<a href="inicio.html">
 					<img class="logo" src="../img/logo2.png">
 				</a>
 			</div>
@@ -65,9 +58,9 @@
 								<span class="hidde">Dependencias</span>
 							</a>
 						</li>
-						<li class="item">
+						<li class="item item-active">
 							<a href="ficha.html">
-								<i class="fa fa-clipboard-check i-init"></i>
+								<i class="fa fa-clipboard-check i-init i-active"></i>
 								<span class="hidde">Ficha Técnica</span>
 							</a>
 						</li>
@@ -98,6 +91,11 @@
 
 
 
+<!---- Popup ---->
+	
+<!---- Popup ---->
+
+
 
 <!----- Ficha Right aside ----->
 	<aside class="right-aside" id="right-aside"> 
@@ -109,20 +107,41 @@
 					<a href="#"><h5 id="admin">Administrador</h5></a>
 				</div>
 			</div>
+			<a id="act-pop-up-left"><i class="fa fa-caret-down" title="Cuenta"></i></a>
 		</div>
-		<div class="mod">
-			<button class="switch" id="switch">
-				<span><i class="fa fa-sun"></i></span>
-				<span><i class="fa fa-moon"></i></span>
-			</button>
-			<h4 id="message">Modo Oscuro</h4>
+		<div id="pop-up-left">
+			<div class="mod-perfil">
+				<a href="perfil.html" class="mod-perfil-a">
+					<i class="fa fa-user-edit icon-right"></i>
+					<h4 id="message">Editar perfil</h4>
+				</a>
+			</div>
+			<div class="mod" id="pc">
+				<button class="switch" id="switch">
+					<span><i class="fa fa-sun"></i></span>
+					<span><i class="fa fa-moon"></i></span>
+				</button>
+				<h4 id="message">Theme</h4>
+			</div>
+			<div class="mod-salir">
+				<a href="../../index.html" class="mod-salir-a">
+					<i class="fa fa-sign-out-alt icon-right"></i>
+					<h4 id="message">Salir</h4>	
+				</a>
+			</div>	
 		</div>
 		<div class="calendary" id="box3">
-			<h4 class="note">Calendario</h4>
+			<div class="name-calendary">
+				<i class="fa fa-calendar-check right-icon"></i>
+				<h4 class="note">Calendario</h4>
+			</div>
 			<div class="calendario"></div>
 		</div>
 		<div class="report" id="box4">
-			<h4 class="note">Reportes</h4>
+			<div class="name-report">
+				<i class="fa fa-clipboard right-icon"></i>
+				<h4 class="note">Reportes</h4>
+			</div>
 			<div class="reportes">
 				<a href="#">Ficha Técnica</a>
 				<a href="#">Inv. Por Faltantes</a>
@@ -147,57 +166,57 @@
 					<button id="r">Responsables</button>
 				</div>
 				<div class="more">
-					<i id="plus" class="fa fa-plus"></i>
-					<i id="minus" class="fa fa-minus"></i>
+					<i class="fa fa-plus plus"></i>
+					<i class="fa fa-minus minus"></i>
 				</div>
 			</div>
-			<div id="ocultar">	
-			<form action="" method="" id="ubicacion">
-				<article id="act-ubicacion">
-						<div class="center">
-							<div class="ficha-codigo">
-								<label for="ficha-codigo">Código de Dependencia</label><br>
-								<input type="text" name="ficha-codigo" id="ficha-codigo">
-							</div>	
-							<div class="ficha-area">
-								<label for="ficha-area">Dependencia o Área</label><br>
-								<input type="text" name="ficha-area" id="ficha-area">
+			<div>	
+				<form action="" method="" id="ubicacion">
+					<article id="act-ubicacion">
+							<div class="center">
+								<div class="ficha-codigo">
+									<label for="ficha-codigo">Código de Dependencia</label><br>
+									<input type="text" name="ficha-codigo" id="ficha-codigo">
+								</div>	
+								<div class="ficha-area">
+									<label for="ficha-area">Dependencia o Área</label><br>
+									<input type="text" name="ficha-area" id="ficha-area">
+								</div>
 							</div>
-						</div>
-						<div class="center">
-							<div class="ficha-clasificacion">
-			  					<label for="ficha-clasificacion">Clasificación</label><br>
-								<input type="text" name="ficha-clasificacion" id="ficha-clasificacion">
+							<div class="center">
+								<div class="ficha-clasificacion">
+				  					<label for="ficha-clasificacion">Clasificación</label><br>
+									<input type="text" name="ficha-clasificacion" id="ficha-clasificacion">
+								</div>
+								<div class="ficha-locacion">
+									<label for="ficha-locacion">Edificio / Locación</label><br>
+									<input type="text" name="ficha-locacion" id="ficha-locacion">
+								</div>
 							</div>
-							<div class="ficha-locacion">
-								<label for="ficha-locacion">Edificio / Locación</label><br>
-								<input type="text" name="ficha-locacion" id="ficha-locacion">
+					</article>
+					<article id="act-responsables">
+							<div class="center">
+								<div class="responsable">
+									<label for="responsable">Responsable por Dependencia</label><br>
+									<input type="text" name="responsable" id="responsable">
+								</div>
+								<div class="responsable-cargo">
+									<label for="responsable-cargo">Cargo</label><br>
+									<input type="text" name="responsable-cargo" id="responsable-cargo">
+								</div>
 							</div>
-						</div>
-				</article>
-				<article id="act-responsables">
-						<div class="center">
-							<div class="responsable">
-								<label for="responsable">Responsable por Dependencia</label><br>
-								<input type="text" name="responsable" id="responsable">
+							<div class="center">
+								<div class="ficha-responsable">
+									<label>Responsable por Uso</label><br>
+									<input type="text" name="ficha-responsable" id="ficha-responsable">
+								</div>
 							</div>
-							<div class="responsable-cargo">
-								<label for="responsable-cargo">Cargo</label><br>
-								<input type="text" name="responsable-cargo" id="responsable-cargo">
+							<div id="foto-responsable">
+								<div class="foto-responsable">Foto</div>
+								<div class="foto-responsable">Foto</div>
 							</div>
-						</div>
-						<div class="center">
-							<div class="ficha-responsable">
-								<label>Responsable por Uso</label><br>
-								<input type="text" name="ficha-responsable" id="ficha-responsable">
-							</div>
-						</div>
-						<div id="foto-responsable">
-							<div class="foto-responsable">Foto</div>
-							<div class="foto-responsable">Foto</div>
-						</div>
-				</article>
-			</form>
+					</article>
+				</form>
 			</div>
 		</section>
 
@@ -212,11 +231,11 @@
 					<button id="rs">Reasignación</button>
 				</div>
 				<div class="more">
-					<i id="plus2" class="fa fa-plus"></i>
-					<i id="minus2" class="fa fa-minus"></i>
+					<i class="fa fa-plus plus"></i>
+					<i class="fa fa-minus minus"></i>
 				</div>
 			</div>
-			<div id="ocultar2">	
+			<div>	
 			<article id="act-incorporacion">
 				<form action="" method="" id="incorporacion">
 					<div class="center">
@@ -372,100 +391,115 @@
 					<button id="f">Foto / Estado</button>
 				</div>
 				<div class="more">
-					<i id="plus3" class="fa fa-plus"></i>
-					<i id="minus3" class="fa fa-minus"></i>
+					<i class="fa fa-plus plus"></i>
+					<i class="fa fa-minus minus"></i>
 				</div>
 			</div>
-			<div id="ocultar3">	
-			<article id="act-descripcion">
-			<h2>Datos del Bien Nacional</h2>
-				<form action="" method="" id="descripción">
-					<div class="center">
-						<div class="desc-cantidad">
-							<label for="desc-cantidad">Cantidad</label><br>
-							<input type="text" name="desc-cantidad" id="desc-cantidad">
-						</div>	
-						<div class="desc-code">
-							<label for="desc-code">Código Actual</label><br>
-							<input type="text" name="desc-code" id="desc-code">
+			<div>	
+				<article id="act-descripcion">
+				<h2>Datos del Bien Nacional</h2>
+					<form action="" method="" id="descripción">
+						<div class="center">
+							<div class="desc-cantidad">
+								<label for="desc-cantidad">Cantidad</label><br>
+								<input type="text" name="desc-cantidad" id="desc-cantidad">
+							</div>	
+							<div class="desc-code">
+								<label for="desc-code">Código Actual</label><br>
+								<input type="text" name="desc-code" id="desc-code">
+							</div>
+							<div class="desc-codigo">
+								<label for="desc-codigo">Código Histórico</label><br>
+								<input type="text" name="desc-codigo" id="desc-codigo">
+							</div>
 						</div>
-						<div class="desc-codigo">
-							<label for="desc-codigo">Código Histórico</label><br>
-							<input type="text" name="desc-codigo" id="desc-codigo">
+						<div class="center">
+							<div class="desc-conservacion">
+			  					<label for="desc-conservacion">Conservación</label><br>
+								<input type="text" name="desc-conservacion" id="desc-conservacion">
+							</div>
+							<div class="desc-chequeo">
+								<label for="desc-chequeo">Chequeo</label><br>
+								<input type="date" name="desc-chequeo" id="desc-chequeo">
+							</div>
+						</div>
+						<div class="center">
+							<div class="desc-name">
+			  					<label for="desc-name">Nombre y Descripción</label><br>
+								<textarea name="desc-name" id="desc-name"></textarea>
+							</div>
+						</div>
+						<div class="center">
+							<div class="desc-valor">
+			  					<label for="desc-valor">Valor Total en Bs.</label><br>
+			  					<input type="text" name="desc-valor" id="desc-valor">
+							</div>
+							<div class="desc-iva">
+								<label for="desc-iva">Monto IVA.</label><br>
+								<input type="text" name="desc-iva" id="desc-iva">
+							</div>
+							<div class="desc-total">
+								<label for="desc-total">Valor Total.</label><br>
+								<input type="text" name="desc-total" id="desc-total">
+							</div>
+						</div>
+				</article>
+				<article id="act-foto">
+					<div id="act-text-foto">
+						<div class="center2">
+							<div class="desc-cheq">
+								<label for="desc-cheq">Chequeo</label><br>
+								<input type="date" name="desc-cheq" id="desc-cheq">
+							</div>
+							<div class="desc-conserv">
+								<label for="desc-conserv">Conservación</label><br>
+								<input type="text" name="desc-conserv" id="desc-conserv">
+							</div>
+						</div>
+						<div class="center">
+							<div class="desc-respons">
+								<label>Responsable por Uso</label><br>
+								<input type="text" name="desc-respons" id="desc-respons">
+							</div>
 						</div>
 					</div>
-					<div class="center">
-						<div class="desc-conservacion">
-		  					<label for="desc-conservacion">Conservación</label><br>
-							<input type="text" name="desc-conservacion" id="desc-conservacion">
+					<div id="act-img-foto">	
+						<div class="act-img-foto">
+							Foto
 						</div>
-						<div class="desc-chequeo">
-							<label for="desc-chequeo">Chequeo</label><br>
-							<input type="date" name="desc-chequeo" id="desc-chequeo">
+						<div>
+							<input type="file" name="foto-bien">
 						</div>
-					</div>
-					<div class="center">
-						<div class="desc-name">
-		  					<label for="desc-name">Nombre y Descripción</label><br>
-							<textarea name="desc-name" id="desc-name"></textarea>
+						<div>
+							<a href="" style="text-decoration: none; border: 1px solid #49454567; color: gray; font-size: 14px; padding: 2%">
+								Imprimir Ficha
+							</a>
 						</div>
 					</div>
-					<div class="center">
-						<div class="desc-valor">
-		  					<label for="desc-valor">Valor Total en Bs.</label><br>
-		  					<input type="text" name="desc-valor" id="desc-valor">
-						</div>
-						<div class="desc-iva">
-							<label for="desc-iva">Monto IVA.</label><br>
-							<input type="text" name="desc-iva" id="desc-iva">
-						</div>
-						<div class="desc-total">
-							<label for="desc-total">Valor Total.</label><br>
-							<input type="text" name="desc-total" id="desc-total">
-						</div>
-					</div>
-			</article>
-			<article id="act-foto">
-				<div id="act-text-foto">
-					<div class="center2">
-						<div class="desc-cheq">
-							<label for="desc-cheq">Chequeo</label><br>
-							<input type="date" name="desc-cheq" id="desc-cheq">
-						</div>
-						<div class="desc-conserv">
-							<label for="desc-conserv">Conservación</label><br>
-							<input type="text" name="desc-conserv" id="desc-conserv">
-						</div>
-					</div>
-					<div class="center">
-						<div class="desc-respons">
-							<label>Responsable por Uso</label><br>
-							<input type="text" name="desc-respons" id="desc-respons">
-						</div>
-					</div>
-				</div>
-				<div id="act-img-foto">	
-					<div class="act-img-foto">
-						Foto
-					</div>
-					<div>
-						<input type="file" name="foto-bien">
-					</div>
-					<div>
-						<a href="" style="text-decoration: none; border: 1px solid #49454567; color: gray; font-size: 14px; padding: 2%">
-							Imprimir Ficha
-						</a>
-					</div>
-				</div>
-			</form>
-			</article>
+				</form>
+				</article>
 			</div>
 		</section>
 
 	</main>
 <!------ End Ficha ------>
 
+<!--- POP-UPS -->
 
+<div class="pop-up-categories">
+	<form action="">
+		<input type="text" placeholder="Codigo">
+		<input type="text" placeholder="Presupuestaria">
+		<input type="text" placeholder="Clasificacion">
+		<input type="text" placeholder="Denominacion">
+		<div class="btn-group">
+			<input class="btn" type="submit" value="Crear">
+			<a id="btn-cancelar" class="btn" href="#">Cancelar</a>
+		</div>
+	</form>
+</div>
+
+<!-- END POP-UPS-->
 
 <footer>
 	<h6>© Desarrollado por Héctor Cortez.</h6>

@@ -17,19 +17,12 @@
 <!--- Header --->
 	<header class="header">
 		<div id="toggle-menu" class="toggle-menu"></div>
-		<div><a href="#"><img id="logo" src="../img/logo2.png"></a></div>
+		<div><a href="inicio.html"><img id="logo" src="../img/logo2.png"></a></div>
 		<div class="tools">
-			<div class="tools-icon">
-				<i id="tools" class="fa fa-tools"></i>
-			</div>
-			<div id="cat-sige">
-				<button>Cat Sigecof</button>
-			</div>
-			<div id="autoridades">
-				<button>Autoridades</button>
-			</div>
-			<div id="buscar">
-				<button>Buscar</button>
+			<a id="showCategoriyForm" class="categories" href="#"><i class="fa fa-tags" title="Categoría Sigecof"></i></a>
+			<div class="search">
+				<input type="text" placeholder="Buscar">
+				<i class="fa fa-search" title="Buscar"></i>
 			</div>
 		</div>
 	</header>
@@ -42,7 +35,7 @@
 	<aside>
 		<div class="menu" id="menu">				
 			<div class="cont-logo">
-				<a href="#">
+				<a href="inicio.html">
 					<img class="logo" src="../img/logo2.png">
 				</a>
 			</div>
@@ -62,9 +55,9 @@
 								<span  class="hidde">Inicio</span>
 							</a>
 						</li>
-						<li class="item">
+						<li class="item item-active">
 							<a href="aside.html">
-								<i class="fa fa-building i-init"></i>
+								<i class="fa fa-building i-init i-active"></i>
 								<span class="hidde">Dependencias</span>
 							</a>
 						</li>
@@ -112,20 +105,41 @@
 					<a href="#"><h5 id="admin">Administrador</h5></a>
 				</div>
 			</div>
+			<a id="act-pop-up-left"><i class="fa fa-caret-down" title="Cuenta"></i></a>
 		</div>
-		<div class="mod">
-			<button class="switch" id="switch">
-				<span><i class="fa fa-sun"></i></span>
-				<span><i class="fa fa-moon"></i></span>
-			</button>
-			<h4 id="message">Modo Oscuro</h4>
+		<div id="pop-up-left">
+			<div class="mod-perfil">
+				<a href="perfil.html" class="mod-perfil-a">
+					<i class="fa fa-user-edit icon-right"></i>
+					<h4 id="message">Editar perfil</h4>
+				</a>
+			</div>
+			<div class="mod">
+				<button class="switch" id="switch">
+					<span><i class="fa fa-sun"></i></span>
+					<span><i class="fa fa-moon"></i></span>
+				</button>
+				<h4 id="message">Theme</h4>
+			</div>
+			<div class="mod-salir">
+				<a href="../../index.html" class="mod-salir-a">
+					<i class="fa fa-sign-out-alt icon-right"></i>
+					<h4 id="message">Salir</h4>	
+				</a>
+			</div>	
 		</div>
 		<div class="calendary" id="box3">
-			<h4 class="note">Calendario</h4>
+			<div class="name-calendary">
+				<i class="fa fa-calendar-check right-icon"></i>
+				<h4 class="note">Calendario</h4>
+			</div>
 			<div class="calendario"></div>
 		</div>
 		<div class="report" id="box4">
-			<h4 class="note">Reportes</h4>
+			<div class="name-report">
+				<i class="fa fa-clipboard right-icon"></i>
+				<h4 class="note">Reportes</h4>
+			</div>
 			<div class="reportes">
 				<a href="#">Portada para Inventario</a>
 				<a href="#">Portada para Sobre</a>
@@ -210,7 +224,22 @@
 		</section>
 	</main>
 <!------ End Dependencias ------>
+<!--- POP-UPS -->
 
+<div class="pop-up-categories">
+	<form action="">
+		<input type="text" placeholder="Codigo">
+		<input type="text" placeholder="Presupuestaria">
+		<input type="text" placeholder="Clasificacion">
+		<input type="text" placeholder="Denominacion">
+		<div class="btn-group">
+			<input class="btn" type="submit" value="Crear">
+			<a id="btn-cancelar" class="btn" href="#">Cancelar</a>
+		</div>
+	</form>
+</div>
+
+<!-- END POP-UPS-->
 
 <footer>
 	<h6>© Desarrollado por Héctor Cortez.</h6>

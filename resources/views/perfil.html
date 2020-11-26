@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Dashboard</title>
+	<title>Dependencias</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="icon" type="image/png" href="../img/logo2.png">
 </head>
@@ -12,12 +12,14 @@
 <!-- Login -->
 <!-- End Login -->
 
+
+
 <!--- Header --->
 	<header class="header">
 		<div id="toggle-menu" class="toggle-menu"></div>
 		<div><a href="inicio.html"><img id="logo" src="../img/logo2.png"></a></div>
 		<div class="tools">
-			<a id="showCategoriyForm" class="categories"  title="Categoría Sigecof" href="#"><i class="fa fa-tags"></i></a>
+			<a id="showCategoriyForm" class="categories" href="#"><i class="fa fa-tags" title="Categoría Sigecof"></i></a>
 			<div class="search">
 				<input type="text" placeholder="Buscar">
 				<i class="fa fa-search" title="Buscar"></i>
@@ -25,6 +27,7 @@
 		</div>
 	</header>
 <!--- End Header --->
+
 
 
 
@@ -46,9 +49,9 @@
 			<div class="menu-center">
 				<nav>	
 					<ul>
-						<li class="item item-active" id="inicio">
+						<li class="item" id="inicio">
 							<a href="inicio.html">
-								<i id="init" class="fa fa-home i-init i-active"></i>
+								<i id="init" class="fa fa-home i-init"></i>
 								<span  class="hidde">Inicio</span>
 							</a>
 						</li>
@@ -92,7 +95,7 @@
 
 
 
-<!----- Inicio Right aside ----->
+<!----- Right aside ----->
 	<aside class="right-aside" id="right-aside"> 
 		<div class="data">
 			<img src="../img/user2.png">
@@ -133,95 +136,88 @@
 			<div class="calendario"></div>
 		</div>
 		<div class="report" id="box4">
-		
+			<div class="name-report">
+				<i class="fa fa-clipboard right-icon"></i>
+				<h4 class="note">Reportes</h4>
+			</div>
+			<div class="reportes">
+				<a href="#">Portada para Inventario</a>
+				<a href="#">Portada para Sobre</a>
+				<a href="#">Listado de Firmas</a>
+				<a href="#">Listado de Áreas</a>
+			</div>
 		</div>
 	</aside>
-<!----- Ficha End Right ----->
+<!----- End Right ----->
 
 
 
 
-<!------ Inicio ------>
+<!------ perfil ------>
 	<main>
-		<h1>Bienvenido(a), Héctor.</h1>
-		<section>
-			<div class="navigation">
-				<div class="links">
-					<button class="inicio">Unidad de Bienes Nacionales</button>
+		<h1>Mi Perfil</h1>
+		<section id="box1">
+			<article>	
+				<div class="container">
+					<div class="foto">
+						<img src="../img/user2.png" alt="">
+					</div>
+					<div class="detalles">
+						<span>Nombre: Hector</span>
+						<span>Apellido: Cortez</span>
+						<span>Correo: josue@dev.com</span>
+						<span>Cédula: 30.105.102</span>
+						<span>Teléfono: 0424-592-03-96</span>
+						<span>Profesión: Estudiante</span>
+						<span>Código U: 060211</span>
+						<a href="#"><i class="fa fa-edit"></i></a>
+					</div>
 				</div>
-				<div class="more">
-					<i class="fa fa-plus plus"></i>
-					<i class="fa fa-minus minus"></i>
-				</div>
-			</div>
-			<div>
-				<article>
-					<p>La Unidad de Bienes Nacionales es la oficina encargada de realizar la toma física de inventarios de los bienes en cada una de las dependencias adscritas a la unidad, es decir, funciona como encargada de velar por el resguardo de cada uno de los bienes que pertenecen a la institución.</p>	
-					<p>Es la responsable a través del equipo laboral en incorporar bienes a cada dependencia, reasignar  en caso de que existan dependencias que no utilicen el activo para ser entregado a otra dependencia, y posteriormente desincorporar una vez que el bien no tenga el uso debido o no se encuentre operativo. Se puede mencionar que esta oficina una vez que la institución adquiere un nuevo bien, lo codifica, lo registra y posteriormente lo incorpora a la dependencia donde es solicitada.</p>
-				</article>
-			</div>
-		</section>
-
-
-
-
-		<section>
-			<div class="navigation">
-				<div class="links">
-					<button class="inicio">Misión</button>				
-				</div>
-				<div class="more">
-					<i class="fa fa-plus plus"></i>
-					<i class="fa fa-minus minus"></i>
-				</div>
-			</div>
-			<div>	
-				<article>
-					<p>Facilitar a todos los ciudadanos que laboran en el departamento el ejercicio del derecho al libre acceso a la información organizada y disponible, mediante la recopilación, preservación y difusión del registro de bienes con el fin de propiciarle el pleno desarrollo de sus capacidades intelectuales y productos, contribuyendo al crecimiento económico, social, educativo y cultural sostenido del Estado, de una manera crítica y participativa.</p>		
-				</article>
-			</div>
-		</section>
-
-		
-
-		<section>
-			<div class="navigation">
-				<div class="links">
-					<button class="inicio">Visión</button>
-				</div>
-				<div class="more">
-					<i class="fa fa-plus plus"></i>
-					<i class="fa fa-minus minus"></i>
-				</div>
-			</div>
-			<div>	
-				<article>
-					<p>Ser el centro líder y de apoyo al desarrollo integral de la población del Estado Lara, que garantice el acceso universal a la información necesaria con respecto a los bienes contenidos en la Universidad para la construcción de sus oportunidades y posibilidades futuras y así asegurarse el crecimiento económico, social, educativo y cultural sostenido del Estado.</p>
-				</article>
-			</div>
-		</section>
-
-
-
-		<section>
-			<div class="navigation">
-				<div class="links">
-					<button class="inicio">Ubicación</button>
-				</div>
-				<div class="more">
-					<i class="fa fa-plus plus"></i>
-					<i class="fa fa-minus minus"></i>
-				</div>
-			</div>
-			<div>	
-			<article>
-				<p>La Unidad de Bienes Nacionales se encuentra dentro de las instalaciones de la Universidad Politécnica Territorial de Lara “Andrés Eloy Blanco”, ubicada al final de la Avenida la Salle con Avenida los Horcones en la Ciudad de Barquisimeto, Parroquia Juan de Villegas Municipio Iribarren, Estado Lara Venezuela.</p>
 			</article>
-			</div>
 		</section>
-
+		<section id="box1">
+			<article>	
+				<div>
+					<h2>Cambiar la contraseña</h2>
+					<form class="center-column" action="">
+						<input type="password" placeholder="Nueva contraseña">
+						<input type="password" placeholder="Repite la contraseña">
+						<input class="submit" type="submit" value="Restablecer">
+					</form>
+				</div>
+			</article>
+		</section>
+		<h2>Todos los usuarios</h2>
+		<section id="box1">
+			<article>	
+				<div class="container">
+					<div class="table">
+						<div class="row">
+							<span>Nombre</span>
+							<span>Apellido</span>
+							<span>Correo</span>
+							<span>Cedula</span>
+							<span>Telefono</span>
+							<span>Acciones</span>
+						</div>
+						<div class="row">
+							<span>Hector</span>
+							<span>Cortez</span>
+							<span>hector@dev.com</span>
+							<span>30105102</span>
+							<span>04121234567</span>
+							<div class="actions">
+								<a href="#"><i class="fa fa-plus"></i></a>
+								<a href="#"><i class="fa fa-edit"></i></a>
+								<a href="#"><i class="fa fa-trash"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
 	</main>
-<!------ End Ficha ------>
+<!------ End perfil ------>
 
 <!--- POP-UPS -->
 

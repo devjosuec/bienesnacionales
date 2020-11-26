@@ -40,8 +40,20 @@ hammer.on('swipeleft swiperight', event => {
     }
 })
 
+/* Pop up */
+$('#pop-up-left').hide();
 
+$('#act-pop-up-left').click(function(){
+    $('#pop-up-left').toggle(5).css({display: 'flex'})
+});
 
+$('#btn-cancelar').click(function () {
+    $('.pop-up-categories').hide()
+})
+
+$('#showCategoriyForm').click(function () {
+    $('.pop-up-categories').toggle(5)
+})
 
 /* Click on toggle*/
 
@@ -56,35 +68,34 @@ document.getElementById('toggle-menu').addEventListener('click',
 /* Dark mode */
 
 const btnSwitch = document.querySelector('#switch');
-const message = document.getElementById('message');
 
     btnSwitch.addEventListener('click', () => {
         document.body.classList.toggle('dark');
         btnSwitch.classList.toggle('active');
-        message.textContent = 'Modo Claro';
 
 
         /* Guardando el modo en localstorage*/
         if(document.body.classList.contains('dark')){
-            localstorage.setItem('modo-oscuro', 'true');
+            window.localStorage.setItem('modo-oscuro', 'true');
         } else {
-            localstorage.setItem('modo-oscuro', 'false');
+            window.localStorage.setItem('modo-oscuro', 'false');
         }
     });
 
-    /* Obteniendo el modo actual 
-    if(localstorage.getItem('modo-oscuro') === 'true'){
+    /* Obteniendo el modo actual */ 
+    if(window.localStorage.getItem('modo-oscuro') === 'true'){
         document.body.classList.add('dark');
         btnSwitch.classList.add('active');
     } else{
         document.body.classList.remove('dark');
         btnSwitch.classList.remove('active');
-    }*/
+    }
+    
 
 
 
 
-/*Class active*/
+/* Class active 
 
 $(document).ready(function(){
     $('#inicio').addClass('item-active');
@@ -100,91 +111,23 @@ $(document).ready(function(){
         $('.i-init').removeClass('i-active');
         $(this).addClass('i-active');
     })
-    
-});
+});  */
 
 
 
 
 /* Btn More */
 
-$('#plus').hide();
-$('#minus').show();
-
-
-$('#minus').click(function(){
-    $('#minus').hide();
-    $('#plus').show();
-    $('#ocultar').hide("linear");
+$('.minus').click(function(){
+    $(this).hide()
+    $(this.previousElementSibling).show()
+    $(this.parentNode.parentNode.nextElementSibling).hide('swing')
 });
 
-$('#plus').click(function(){
-    $('#plus').hide();
-    $('#minus').show();
-    $('#ocultar').show("swing");
-});
-
-
-
-
-/* Btn 2 More */
-
-$('#plus2').hide();
-$('#minus2').show();
-
-
-$('#minus2').click(function(){
-    $('#minus2').hide();
-    $('#plus2').show();
-    $('#ocultar2').hide("linear");
-});
-
-$('#plus2').click(function(){
-    $('#plus2').hide();
-    $('#minus2').show();
-    $('#ocultar2').show("swing");
-});
-
-
-
-
-/* Btn 3 More */
-
-$('#plus3').hide();
-$('#minus3').show();
-
-
-$('#minus3').click(function(){
-    $('#minus3').hide();    
-    $('#plus3').show();
-    $('#ocultar3').hide("linear");
-});
-
-$('#plus3').click(function(){
-    $('#plus3').hide();
-    $('#minus3').show();
-    $('#ocultar3').show("swing");
-});
-
-
-
-
-/* Btn 4 More */
-
-$('#plus4').hide();
-$('#minus4').show();
-
-
-$('#minus4').click(function(){
-    $('#minus4').hide();    
-    $('#plus4').show();
-    $('#ocultar4').hide("linear");
-});
-
-$('#plus4').click(function(){
-    $('#plus4').hide();
-    $('#minus4').show();
-    $('#ocultar4').show("swing");
+$('.plus').click(function(){
+    $(this).hide()
+    $(this.nextElementSibling).show()
+    $(this.parentNode.parentNode.nextElementSibling).show('swing')
 });
 
 
@@ -275,24 +218,8 @@ $('#f').click(function(){
 
 /* tools */
 
-$('#cat-sige').hide();
-$('#autoridades').hide();
-$('#buscar').hide();
 
-$('#tools').click(function(){
-    $('#cat-sige').toggle(200);
-    $('#autoridades').toggle(200);
-    $('#buscar').toggle(200);
-});
 
-$('#cat-sige').click(function(){
-    alert('En Desarrollo...');
-});
 
-$('#autoridades').click(function(){
-    alert('En Desarrollo...');
-});
 
-$('#buscar').click(function(){
-    alert('En Desarrollo...');
-});
+
